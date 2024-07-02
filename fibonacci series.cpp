@@ -1,18 +1,27 @@
-#include<iostream>
-using namespace std;
+// Fibonacci series program.
+#include<stdio.h>
+void fibonacci(int num);
 int main()
 {
-	int num,f,s,n,i;
-	cout<<"Enter the Number :";
-	cin>>num;
-	for(i=1;i<=n;i++)
-	{
-		f=0;
-		s=1;
-		n=f+s;
-		f=s;
-		s=n;
-		cout<<n<<endl;
-	}
+	int num;
+	printf("Enter any Number :");
+	scanf("%d",&num);
+	fibonacci(num);
 	return 0;
+}
+void fibonacci(int num)
+{
+	int a=0,b=1,c,i=3;
+	if(num == 1)
+	printf("%d",a);
+	else if(num >=2)
+	printf("%d\t%d",a,b);
+	while (i <=num)
+	{
+		c=a+b;
+		printf("\t%d",c);
+		a=b;
+		b=c;
+		i++;
+	}
 }
