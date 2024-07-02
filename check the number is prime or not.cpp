@@ -1,30 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main(){
-	int n,i,j,f=0,num;
-	cin>>n;
-	int arr[n];
-	for(i=0;i<n;i++){
-		cin>>arr[i];
-		num=arr[i];
-	}
-	
-	for(j=2;j<num;j++){
-		for(i=0;i<n;i++){
-		
-		if(num%j==0){
-			f=1;
+#include<stdio.h>
+int main()
+{
+	int a,p=1;
+	printf("Enter the Number :");
+	scanf("%d",&a);
+	for (int i=2;i<=a;i++)
+	{
+		if(a%i==0)
+		{
+			int p=0;
 			break;
 		}
-		}
-	}	
-	for(i=0;i<n;i++){
-		if(f==0)
-			cout<<"Yes";
-		else
-			cout<<"No";
 	}
-	
+	if (p==1)
+	printf("%d is prime",a);
+	else
+	printf("%d is not prime",a);
 	return 0;
-	
 }

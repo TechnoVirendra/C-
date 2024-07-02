@@ -1,7 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
+
 {
-	int const x=97;
-	x++;
-	printf("x is %d",x);
+	char c[100];
+	printf("%lu",sizeof(c));
+    return 0;
 }
