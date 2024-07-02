@@ -1,11 +1,11 @@
-#include <iostream>
-using namespace std;
+// write a program to make a sum of two numbers .
+#include<stdio.h>
 int main()
 {
-	int num1,num2,sum;
-	cout << "Enter Two Number :";
-	cin >> num1 >>num2;
-	sum=num1+num2;
-	cout << "Sum of Two Numbers is"<<"\t" << sum;
+	int a,b,c;								 // taking three Variable.    
+	printf("Enter Two Number :");			// print Enter Two Number
+	scanf("%d%d",&a,&b);					// input two number 
+	c=a+b;									// sum formula.
+	printf("Sum of Two Numbers =%d",c);		// print sum 
 	return 0;
 }
